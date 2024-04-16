@@ -1,0 +1,61 @@
+body {
+    background-color: #e2ded3; 
+    margin: 0;
+    padding: 0;
+}
+
+table, thead, th, tbody, tr, td {
+    border: 1px solid;
+}
+
+#map {
+    width: 80%;
+    height: 70vh;
+    border: 5px solid #404040;
+    position: relative; 
+    z-index: 5;
+}
+
+label {
+    width: 20px;
+    height: 80px;
+    background-color: #d1d1d1;
+    color: #686666;
+    position: absolute; 
+    right: -20px;
+    top: 0; 
+    bottom: 0; 
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+}
+
+#sideMenu-active:checked + .sideMenu {
+    transform: translateX(0);
+    label .fas {
+      transform: scaleX(-1);
+    }
+}
+
+#sideMenu-active {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.sideMenu {
+    width: 30%;
+    background-color: #ffe9cc;
+    border-right: 3px solid #d1d1d1;
+    display: flex;
+    float: left;
+    flex-direction: column; 
+    padding: 10px 20px;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+    position: absolute;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}

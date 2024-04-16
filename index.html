@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>車禍地圖</title>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+    <input type="checkbox" name="" id="sideMenu-active" />
+    <div class="sideMenu">
+        <nav>
+        <h4>車禍資訊</h4>
+        <table class="table1">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Pos</td>
+                    <td>Time</td>
+                    <td>Img</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <label for="sideMenu-active">
+            <i class="fas fa-angle-right"></i>
+        </label>
+        </nav>
+    </div>
+
+    <center><h1 style="color:#2d0064;">車禍地圖</h1></center>
+    <center><hr style="height:2px; border:none; color:#000000; background-color:#000000; width:50%; margin: 0 auto 0 auto;"></center>
+    <center><h3 style="color:#00013c;">Leaflet x OpenStreetMap</h3></center>
+    
+
+    
+
+    <center><div id="map"></div></center>
+
+</body>
+
+
+</html>
+
+<!-- js  -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<script src="https://api.imgur.com/3/image"></script>
+<script src="index.js"></script>
+
